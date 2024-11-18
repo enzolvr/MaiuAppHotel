@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MaiuAppHotel.Views.Sobre"
+             BackgroundColor="DarkGray"
+             >
+    <VerticalStackLayout>
+        <Image
+            Source="hotelogo.png"
+            HeightRequest="185"
+            Aspect="AspectFit"
+            SemanticProperties.Description="logo do hotel" />
+        
+        <Label 
+            Text="Sobre Nós"
+            FontSize="40"
+            FontFamily="KalamBold"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            TextColor="Black"/>
+
+        <Frame Margin="10">
+            
+            <HorizontalStackLayout>
+                    <Label Text="Me chamo Enzo Oliveira e desenvolvi essa página de reserva para hotéis. " 
+                           FontFamily="KalamBold"
+                           FontSize="10"
+                    TextColor="DarkKhaki" />
+                </HorizontalStackLayout>
+        </Frame>
+
+        <Button Text="Voltar" 
+        BackgroundColor="Beige"
+        Clicked="Button_Clicked"
+        HorizontalOptions="Center"
+        />
+        
+    </VerticalStackLayout>
+</ContentPage>
